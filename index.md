@@ -1,6 +1,6 @@
 <html>
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191706851-1"></script>
+ <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-191706851-1"></script>-->
 <link rel="stylesheet" href="style.css">
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,7 +16,7 @@
   var iframe;
   
   window.addEventListener("message", function(e){
-    if (e.origin != "https://mlpcalc.github.io")
+    if (false)
       return;
 	iframe.style.height = e.data+"px";
   })
@@ -38,6 +38,12 @@
 
 </script>
 </head>
+<style>
+ body {
+  background-color: 1d1f21;	
+  color: aaa;
+ }
+</style>
 <body onload="loadpage()">  
 <div class="container-lg markdown-body">
 <h1 style="margin-bottom: 1px;">Event calculator</h1>

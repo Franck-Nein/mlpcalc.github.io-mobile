@@ -2,7 +2,15 @@
 <head>
 <script src="siege_data.js"></script> 
 <link rel="stylesheet" href="style.css">
-
+<style>
+ body {
+  background-color: 1d1f21;	
+  color: aaa;
+ }
+ html {
+  overflow: hidden;
+ }
+</style>
 <script>
 
   var selectedEvent;
@@ -139,7 +147,7 @@
   
   function generateHelpers(){
     let p = document.getElementById("helpers");
-	p.innerHTML = '<b>Helpers:</b> <input style="width:100px" type="button" value="switch view" onclick="swapImages()"><br>'
+	p.innerHTML = '<b>Helpers:</b> <input type="button" value="switch view" onclick="swapImages()"><br>'
     let helpnames = maindata['helpnames'];
 	let helpstage = maindata['helpstage'];
 	let stagenums = [];
